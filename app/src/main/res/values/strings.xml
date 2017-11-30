@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ShoppingList</string>
+    <string name="delete_all">Delete All</string>
+    <string name="add_item">Add item</string>
+    <string name="item_name">Item Name</string>
+    <string name="item_type">Item Type:</string>
+    <string name="estimated_price">Estimated Price</string>
+    <string name="description">Description</string>
+    <string name="already_purchased">Already Purchased</string>
+    <string name="total">Total:</string>
+    <string-array name="categories">
+        <item>  </item>
+        <item>Food</item>
+        <item>Clothes</item>
+        <item>Book</item>
+    </string-array>
+</resources>

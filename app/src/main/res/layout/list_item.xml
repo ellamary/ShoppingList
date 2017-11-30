@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/itemLayout"
+    android:paddingLeft="10dp"
+    android:background="#bfafce"
+    android:paddingRight="10dp"
+    android:layout_marginTop="10dp"
+    android:paddingTop="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/purchased"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:id="@+id/categoryImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_help_outline"
+            android:layout_toRightOf="@id/purchased"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@id/categoryImage"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/itemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item"
+                android:autoSizeTextType="uniform"/>
+
+            <TextView
+                android:id="@+id/itemCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$150"
+                android:textSize="15sp"
+                android:layout_below="@id/itemName" />
+        </RelativeLayout>
+
+
+        <ImageButton
+            android:id="@+id/btnEdit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_mode_edit"
+            android:layout_alignParentRight="true"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <ImageButton
+            android:id="@+id/btnDeleteItem"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_delete"
+            android:layout_toLeftOf="@id/btnEdit"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btnDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:text="details"/>
+
+
+</LinearLayout>
